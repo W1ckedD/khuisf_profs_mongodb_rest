@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 module.exports = async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGODB_STR, {
+        const conn = await mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
             useCreateIndex: true,
             useNewUrlParser: true,
             useUnifiedTopology: true,
